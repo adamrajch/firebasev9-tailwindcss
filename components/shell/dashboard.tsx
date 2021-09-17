@@ -12,7 +12,7 @@ const navigation = [
   { name: "Calendar", href: "/calendar", current: false },
 ];
 const userNavigation = [
-  { name: "Profile", href: "/profile" },
+  { name: "Profile", href: "/dashboard/profile" },
   { name: "Settings", href: "#" },
 ];
 
@@ -94,8 +94,8 @@ export default function Dashboard({ children }) {
                             <img
                               className="h-8 w-8 rounded-full"
                               src={
-                                user.userData.photoUrl
-                                  ? user.userData.photoUrl
+                                user.userData.photoURL
+                                  ? user.userData.photoURL
                                   : "https://www.freepnglogos.com/uploads/naruto-png/naruto-throwing-ball-transparent-png-stickpng-3.png"
                               }
                               alt=""
@@ -185,8 +185,8 @@ export default function Dashboard({ children }) {
                         <img
                           className="h-10 w-10 rounded-full"
                           src={
-                            user.userData.photoUrl
-                              ? user.userData.photoUrl
+                            user.userData.photoURL
+                              ? user.userData.photoURL
                               : "https://www.freepnglogos.com/uploads/naruto-png/naruto-throwing-ball-transparent-png-stickpng-3.png"
                           }
                           alt=""
